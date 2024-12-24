@@ -10,7 +10,7 @@ if($_POST) {
 	$email = htmlentities(trim($_POST['email']));
 	$phone = htmlentities(trim($_POST['phone']));
 	$password = htmlentities(trim($_POST['password']));
-	$r = $user1->update($fname, $lname, $email, $phone, $password, $_SESSION['userid']);
+	$user1->update($fname, $lname, $email, $phone, $password, $_SESSION['userid']);
 
 }
 else{header("location:../index.php");}
