@@ -1,3 +1,6 @@
+<?php 
+@ob_start();
+session_start(); ?>
 <?php
 
 
@@ -7,9 +10,10 @@
 		var $connect;
 
 		function __construct() {
-			$this->connect = new Mysqli('localhost', 'root', '', 'realestatedb');
+			$this->connect = new Mysqli('db', 'root', 'rootpassword123', 'realestatedb');
 
-			session_start();
+
+			// session_start();
 		}
 
 
@@ -31,7 +35,7 @@
 			$message = "Dear $user_fname,
 						You can now login with your email : $user_email";
 
-			@mail($email, 'Thank You', $message);						
+			@mail($user_email, 'Thank You', $message);						
 
 
 
@@ -115,5 +119,5 @@
 
 
 	}
-
+	ob_flush();
 ?>

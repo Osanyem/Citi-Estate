@@ -11,7 +11,7 @@
       
         div   {}
 
-        #searchBar   {min-height: 500px;  background-image:url('../static/rent_page/bi.png'); background-size: cover;               background-attachment:fixed;}
+        #searchBar   {min-height: 500px;  background-image:url('/static/rent_page/bi.png'); background-size: cover;               background-attachment:fixed;}
 
         #navbar {position: sticky;  top:0px; z-index: 1}
 
@@ -93,7 +93,7 @@ for ($i=0; $i < count($details); $i++) {
       </div>
       <div class="row">
         <div class="col-sm-12 col-md-6 offset-md-4 p-2">
-          <a href="index.php"><img src="../static/home_page/logo_head.png"></a>
+          <a href="index.php"><img src="/static/home_page/logo_head.png"></a>
           <span style="color: gray"><i>Follow Us:</i></span>
           <a href="https://www.facebook.com/" style="font-size:1.5em" target='_blank'><i class="fab fa-facebook"></i></a>
           <a href="https://twitter.com/" style="font-size:1.5em" target='_blank'><i class="fab fa-twitter"></i></a>

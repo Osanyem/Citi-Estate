@@ -5,7 +5,8 @@
 		var $connect;
 
 		function __construct() {
-			$this->connect = new Mysqli('localhost', 'root', '', 'realestatedb');
+			$this->connect = new Mysqli('db', 'root', 'rootpassword123', 'realestatedb');
+
 
 		}
 
@@ -81,7 +82,8 @@
   		$new_name = md5(microtime()) . $original_name;
   		$filesize = $file_array['pic']['size'][$i];
   		$allowed_extensions = array('jpg','png','jpeg');
-  		$extension = @end(explode('.',$original_name));
+		$original_name_parts = explode('.', $original_name);
+		$extension = @end($original_name_parts);
   		$error = array();
 
   		if(!in_array($extension, $allowed_extensions)){
@@ -111,7 +113,7 @@
 
     		$result = $this->connect->query($sql);
 
-   		if($result->affected_rows > 0){
+		if($this->connect->affected_rows > 0){
    			header('location:../successfuldeleteprop.php');
    		}
    		else{ 
