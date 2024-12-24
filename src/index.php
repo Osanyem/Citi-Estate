@@ -13,11 +13,11 @@
 	   	
 	   		div 	{}
 
-	   		#searchBar 	 {min-height: 600px;	background-image:url('../media/home_page/bi.jpg');	background-size: cover;						background-attachment:fixed;}
+	   		#searchBar 	 {min-height: 600px;	background-image:url('../static/home_page/bi.jpg');	background-size: cover;						background-attachment:fixed;}
 
 	   		#navbar	{position: sticky;	top:0px; z-index: 1}
 
-	   		#bottom 	{min-height:300px;background-image:url('../media/home_page/bottom.png'); background-size: cover }
+	   		#bottom 	{min-height:300px;background-image:url('../static/home_page/bottom.png'); background-size: cover }
 
 	   		#space 	{height: 100px;}
 
@@ -70,7 +70,7 @@ require('components/nav-bar.php') ?>
 
 				<a href="buy_page.php" id="house_link">
 				<div class="col-md-3 col-12 ml-md-5 p-2" style="background-color: white; text-align: center" id="options">
-					<img src="../media/home_page/buy_pic.png" class="img-fluid">
+					<img src="../static/home_page/buy_pic.png" class="img-fluid">
 					<h2 style="padding-top: 10px">Buy A Home</h2>
 					<p style="padding-top: 10px; font-weight: 500">Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
 					<a class="btn btn-outline-primary" href="buy_page.php">Search Homes</a>
@@ -79,7 +79,7 @@ require('components/nav-bar.php') ?>
 
 				<a data-toggle="modal" href="#modalLogin"id="house_link">
 				<div class="col-md-3 col-12 offset-md-1 p-2" style="background-color: white; text-align: center" id="options">
-					<img src="../media/home_page/sell_pic.png" class="img-fluid">
+					<img src="../static/home_page/sell_pic.png" class="img-fluid">
 					<h2 style="padding-top: 10px">Sell A Home</h2>
 					<p style="padding-top: 10px; font-weight: 500">Whether you sell with new Citi Estate™ or take another approach, we’ll help you navigate the path to a successful sale.Get started selling with us today.</p>
 					<a class="btn btn-outline-primary" data-toggle="modal" href="#modalLogin">Sell with Citi Estate</a>					
@@ -88,7 +88,7 @@ require('components/nav-bar.php') ?>
 	
 				<a href="rent_page.php" id="house_link">
 				<div class="col-md-3 col-12 offset-md-1 p-2" style="background-color: white; text-align: center" id="options">
-					<img src="../media/home_page/rent_pic.png" class="img-fluid">
+					<img src="../static/home_page/rent_pic.png" class="img-fluid">
 					<h2 style="padding-top: 10px">Rent A Home</h2>
 					<p style="padding-top: 10px; font-weight: 500">We’re creating a seamless online experience – from shopping on the largest rental network, to applying, to paying rent.</p>
 					<a class="btn btn-outline-primary" href="rent_page.php">Find rentals</a>					
@@ -121,7 +121,7 @@ require('components/nav-bar.php') ?>
 			</div>
 			<div class="row">
 				<div class="col-sm-12 col-md-6 offset-md-4 p-2">
-					<a href="index.php"><img src="../media/home_page/logo_head.png" ></a>
+					<a href="index.php"><img src="../static/home_page/logo_head.png" ></a>
 					<span style="color: gray"><i>Follow Us:</i></span>
 					<a href="https://www.facebook.com/" style="font-size:1.5em" target='_blank'><i class="fab fa-facebook"></i></a>
 					<a href="https://twitter.com/" style="font-size:1.5em" target='_blank'><i class="fab fa-twitter"></i></a>

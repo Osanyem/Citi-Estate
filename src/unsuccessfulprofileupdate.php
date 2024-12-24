@@ -90,7 +90,7 @@ $details = $r->getDetails($_SESSION['userid']);
       </div>
       <div class="row">
         <div class="col-sm-12 col-md-6 offset-md-4 p-2">
-          <a href="index.php"><img src="../media/home_page/logo_head.png"></a>
+          <a href="index.php"><img src="../static/home_page/logo_head.png"></a>
           <span style="color: gray"><i>Follow Us:</i></span>
           <a href="https://www.facebook.com/" style="font-size:1.5em" target='_blank'><i class="fab fa-facebook"></i></a>
           <a href="https://twitter.com/" style="font-size:1.5em" target='_blank'><i class="fab fa-twitter"></i></a>
